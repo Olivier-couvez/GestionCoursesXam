@@ -1,0 +1,46 @@
+    <StackLayout>
+
+        <NavigationPage.TitleView>
+
+
+            <Grid BackgroundColor="LightGray" WidthRequest="500" HeightRequest="500">
+                    <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                     <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Label Text="Gestion de courses " Grid.Row="0" Grid.Column="0" HorizontalTextAlignment="Center" TextColor="White" FontSize="20"/>
+
+                <ImageButton Source="coureur.png" Grid.Row="0" Grid.Column="1"
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="Center"
+                Clicked="ImageButton_Clicked" />
+
+                <Button Text="Courses" Grid.Row="0" Grid.Column="2"
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="Center"
+                Clicked="Button_Clicked" />
+            </Grid>
+            
+        </NavigationPage.TitleView>
+        
+        <ListView>
+            <ListView.ItemsSource>
+                <x:Array Type="{x:Type x:String}">
+                    <x:String>mono</x:String>
+                    <x:String>monodroid</x:String>
+                    <x:String>monotouch</x:String>
+                    <x:String>monorail</x:String>
+                    <x:String>monodevelop</x:String>
+                    <x:String>monotone</x:String>
+                    <x:String>monopoly</x:String>
+                    <x:String>monomodal</x:String>
+                    <x:String>mononucleosis</x:String>
+                </x:Array>
+            </ListView.ItemsSource>
+        </ListView>
+    </StackLayout>

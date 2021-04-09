@@ -14,5 +14,20 @@ namespace GestionCoursesXam
         {
             InitializeComponent();
         }
+
+        private void ImageButton_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Button_Clicked(object sender, EventArgs e)
+        {
+
+        }
     }
+    public TitleViewPage()
+    {
+        var titleView = new Slider { HeightRequest = 44, WidthRequest = 300 };
+        NavigationPage.SetTitleView(this, titleView);
+
 }
